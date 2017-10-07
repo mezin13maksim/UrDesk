@@ -34,6 +34,10 @@ void setup() {
 WiFi.mode(WIFI_AP); // //Our ESP8266-12E is an AccessPoint 
 WiFi.softAP("Reality_Family", "12345678"); //  // Provide the (SSID, password); . 
 server.begin(); //  // Start the HTTP Server 
+
+IPAddress HTTPS_ServerIP= WiFi.softAPIP(); // Obtain the IP of the Server 
+Serial.print("Server IP is: "); // Print the IP to the monitor window 
+Serial.println(HTTPS_ServerIP);
 }
 void loop() {
   /* Update all the values */
@@ -54,18 +58,46 @@ void loop() {
   gyroYangle += kalmanY.getRate()*((double)(micros()-timer)/1000000);
   kalAngleX = kalmanX.getAngle(accXangle, gyroXrate, (double)(micros()-timer)/1000000); // Calculate the angle using a Kalman filter
   kalAngleY = kalmanY.getAngle(accYangle, gyroYrate, (double)(micros()-timer)/1000000);
+  if(kalAngleX>360){
+    kalAngleX=360;
+    }
+  else if (kalAngleX<0)kalAngleX=0;
+   if(kalAngleY>360){
+   kalAngleY=360;
+    }
+   else if (kalAngleY<0)kalAngleY=0;
+
   timer = micros();
-Serial.println();
-    Serial.print("X:");
-    Serial.print(kalAngleX,0);
-    Serial.print(" ");
-    Serial.print("Y:");
-    Serial.print(kalAngleY,0);
-    Serial.println(" ");
+//Serial.println();
+   // Serial.print("X:");
+   // Serial.print(kalAngleX,0);
+  //  Serial.print(" ");
+  // Serial.print("Y:");
+   // Serial.print(kalAngleY,0);
+   // Serial.println(" ");
    // server.write(kalAngleX);
    // server.write(kalAngleY);
-    delay(1000); //
+    //delay(1000); //
   // The accelerometer's maximum samples rate is 1kHz
+
+WiFiClient client = server.available();
+if (client) { 
+Serial.println("We have client");
+
+//Read what the browser has sent into a String class and print the request to the monitor
+String request = client.readString(); 
+//Looking under the hood 
+Serial.println(request);
+
+
+if (request.indexOf("/artempidorka") != -1)
+ client.print(kalAngleX,0);
+ client.print(" ");
+ client.print(kalAngleY,0);
+} 
+//Looking under the hood 
+
+
 }
 void i2cWrite(uint8_t registerAddress, uint8_t data){
   Wire.beginTransmission(IMUAddress);
@@ -83,3 +115,4 @@ uint8_t* i2cRead(uint8_t registerAddress, uint8_t nbytes) {
     data [i]= Wire.read();
   return data;
 }
+
