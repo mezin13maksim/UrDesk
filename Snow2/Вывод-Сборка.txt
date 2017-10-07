@@ -1,3 +1,0 @@
-﻿1>------ Сборка начата: проект: Assembly-CSharp, Конфигурация: Debug Any CPU ------
-1>  Assembly-CSharp -> C:\Users\Admin\Documents\Snow2\Temp\bin\Debug\Assembly-CSharp.dll
-========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
