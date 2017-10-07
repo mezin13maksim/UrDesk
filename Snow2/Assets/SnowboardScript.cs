@@ -19,12 +19,12 @@ public class SnowboardScript : MonoBehaviour
 
     void OnTriggerEnter() {
         isFly = false;
-        print("ent");
+        
     }
     void OnTriggerExit()
     {
         isFly = true;
-        print("ex");
+        
     }
     // Update is called once per frame
     void Update()
