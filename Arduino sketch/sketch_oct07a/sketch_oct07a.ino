@@ -34,6 +34,10 @@ void setup() {
 WiFi.mode(WIFI_AP); // //Our ESP8266-12E is an AccessPoint 
 WiFi.softAP("Reality_Family", "12345678"); //  // Provide the (SSID, password); . 
 server.begin(); //  // Start the HTTP Server 
+
+IPAddress HTTPS_ServerIP= WiFi.softAPIP(); // Obtain the IP of the Server 
+Serial.print("Server IP is: "); // Print the IP to the monitor window 
+Serial.println(HTTPS_ServerIP);
 }
 void loop() {
   /* Update all the values */
@@ -66,6 +70,8 @@ Serial.println();
    // server.write(kalAngleY);
     delay(1000); //
   // The accelerometer's maximum samples rate is 1kHz
+
+  
 }
 void i2cWrite(uint8_t registerAddress, uint8_t data){
   Wire.beginTransmission(IMUAddress);
