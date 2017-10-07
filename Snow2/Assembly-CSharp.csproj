@@ -53,9 +53,11 @@
   <ItemGroup>
      <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\deformation.cs" />
+     <Compile Include="Assets\GetHttp.cs" />
      <Compile Include="Assets\SnowboardScript.cs" />
      <Compile Include="Assets\TerrainElement.cs" />
      <Compile Include="Assets\TerrainGenerator.cs" />
+     <Compile Include="Assets\upColliderScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
