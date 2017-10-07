@@ -1,5 +1,7 @@
 #include <Wire.h>
+#include <ESP8266WiFi.h>//
 #include "Kalman.h"
+WiFiServer server(80);//    //Initialize the server on Port 80
 Kalman kalmanX;
 Kalman kalmanY;
 uint8_t IMUAddress = 0x68;
@@ -28,6 +30,10 @@ void setup() {
   kalmanX.setAngle(180); // Set starting angle
   kalmanY.setAngle(180);
   timer = micros();
+
+WiFi.mode(WIFI_AP); // //Our ESP8266-12E is an AccessPoint 
+WiFi.softAP("Reality_Family", "12345678"); //  // Provide the (SSID, password); . 
+server.begin(); //  // Start the HTTP Server 
 }
 void loop() {
   /* Update all the values */
@@ -56,6 +62,9 @@ Serial.println();
     Serial.print("Y:");
     Serial.print(kalAngleY,0);
     Serial.println(" ");
+   // server.write(kalAngleX);
+   // server.write(kalAngleY);
+    delay(1000); //
   // The accelerometer's maximum samples rate is 1kHz
 }
 void i2cWrite(uint8_t registerAddress, uint8_t data){
