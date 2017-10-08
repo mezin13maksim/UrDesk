@@ -108,16 +108,12 @@ String request = client.readString();
 Serial.println(request);
 
 
-if (request.indexOf("/artempidorka") != -1)
-
- client.print(ReturnOnes(kalAngleX, setupX, 4),0);
- client.print(" ");
- client.print(ReturnOnes(kalAngleY, setupY, 4),0);
+if (request.indexOf("/artempidorka") != -1){
+ String out = String(kalAngleX,0) + "/" + String(kalAngleY,0);
+ client.print(out);
 } 
 //Looking under the hood 
-
-
-}
+}}
 void i2cWrite(uint8_t registerAddress, uint8_t data){
   Wire.beginTransmission(IMUAddress);
   Wire.write(registerAddress);
@@ -134,10 +130,10 @@ uint8_t* i2cRead(uint8_t registerAddress, uint8_t nbytes) {
     data [i]= Wire.read();
   return data;
   }
-
+/*
   double ReturnOnes(double Real, double Set, double Sens){
     if (Real > (Set+Sens)) return (1);
     else if (Real < (Set-Sens)) return (-1);
          else return (0);
-         }
+         } */
 
