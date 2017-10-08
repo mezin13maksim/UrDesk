@@ -54,6 +54,7 @@
      <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\deformation.cs" />
      <Compile Include="Assets\GetHttp.cs" />
+     <Compile Include="Assets\SerialTransform.cs" />
      <Compile Include="Assets\SnowboardScript.cs" />
      <Compile Include="Assets\TerrainElement.cs" />
      <Compile Include="Assets\TerrainGenerator.cs" />

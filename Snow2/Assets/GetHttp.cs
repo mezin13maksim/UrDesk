@@ -7,17 +7,16 @@ using UnityEngine;
 public class GetHttp : MonoBehaviour {
 
 
-    public string Url = "http://192.168.4.1/artempidorka";
-    private string pos = "0 0";
+   private string Url = @"http://192.168.4.1/";
+    public string pos = "";
+    public float speedYRotation = 10;
 
-    
     public IEnumerator GET()
     {
-        string str = "";
-        
-            WWW Query = new WWW(Url);
+            WWW Query = new WWW("http://192.168.4.1/artempidorka");
             yield return Query;
             pos = Query.text;
+            Debug.Log("Log" + Query.text);
             Query.Dispose();
     }
 
@@ -26,12 +25,15 @@ public class GetHttp : MonoBehaviour {
         int[] coords = new int[2];
         StartCoroutine(GET());
 
+
         int k = pos.IndexOf(' ');
-        Debug.Log("k");
+        
+
 
         string s1="";
         string s2="";
 
+        
         for (int i = 0; i <= pos.Length-1; i++) {
             if (i < k)
             {
@@ -67,10 +69,16 @@ public class GetHttp : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            int[] coords = getCoordinats();
+            StartCoroutine(GET());
+            //int[] coords = getCoordinats();}
 
-            Debug.Log("x"+coords[0]);
-            Debug.Log("y" + coords[1]);
+            //Debug.Log("x"+coords[0]);
+            //Debug.Log("y"+coords[1]);
+                
+
+        //transform.Rotate(coords[1] * Vector3.up * speedYRotation * Time.deltaTime);
+
+
 
         }
 
