@@ -13,6 +13,8 @@ int16_t tempRaw;
 int16_t gyroX;
 int16_t gyroY;
 int16_t gyroZ;
+double gyroXrate;
+double gyroYrate;
 double accXangle; // Angle calculate using the accelerometer
 double accYangle;
 double temp;
@@ -22,6 +24,10 @@ double compAngleX = 180; // Calculate the angle using a Kalman filter
 double compAngleY = 180;
 double kalAngleX; // Calculate the angle using a Kalman filter
 double kalAngleY;
+double setupX;
+double setupY;
+bool first = true;
+
 uint32_t timer;
 void setup() {
   Wire.begin();
@@ -39,7 +45,9 @@ IPAddress HTTPS_ServerIP= WiFi.softAPIP(); // Obtain the IP of the Server
 Serial.print("Server IP is: "); // Print the IP to the monitor window 
 Serial.println(HTTPS_ServerIP);
 }
+
 void loop() {
+  //if (first) delay(10000);
   /* Update all the values */
   uint8_t* data = i2cRead(0x3B,14);
   accX = ((data[0] << 8) | data[1]);
@@ -52,12 +60,21 @@ void loop() {
   /* Calculate the angls based on the different sensors and algorithm */
   accYangle = (atan2(accX,accZ)+PI)*RAD_TO_DEG;
   accXangle = (atan2(accY,accZ)+PI)*RAD_TO_DEG;  
-  double gyroXrate = (double)gyroX/131.0;
-  double gyroYrate = -((double)gyroY/131.0);
+  gyroXrate = (double)gyroX/131.0;
+  gyroYrate = -((double)gyroY/131.0);
   gyroXangle += kalmanX.getRate()*((double)(micros()-timer)/1000000); // Calculate gyro angle using the unbiased rate
   gyroYangle += kalmanY.getRate()*((double)(micros()-timer)/1000000);
   kalAngleX = kalmanX.getAngle(accXangle, gyroXrate, (double)(micros()-timer)/1000000); // Calculate the angle using a Kalman filter
   kalAngleY = kalmanY.getAngle(accYangle, gyroYrate, (double)(micros()-timer)/1000000);
+
+  if (first){
+    setupX = kalAngleX;
+    setupY = kalAngleY;
+    first = false;
+    return;
+    }
+
+ /*
   if(kalAngleX>360){
     kalAngleX=360;
     }
@@ -66,6 +83,7 @@ void loop() {
    kalAngleY=360;
     }
    else if (kalAngleY<0)kalAngleY=0;
+   */
 
   timer = micros();
 //Serial.println();
@@ -91,9 +109,10 @@ Serial.println(request);
 
 
 if (request.indexOf("/artempidorka") != -1)
- client.print(kalAngleX,0);
+
+ client.print(ReturnOnes(kalAngleX, setupX, 4),0);
  client.print(" ");
- client.print(kalAngleY,0);
+ client.print(ReturnOnes(kalAngleY, setupY, 4),0);
 } 
 //Looking under the hood 
 
@@ -114,5 +133,11 @@ uint8_t* i2cRead(uint8_t registerAddress, uint8_t nbytes) {
   for(uint8_t i = 0; i < nbytes; i++)
     data [i]= Wire.read();
   return data;
-}
+  }
+
+  double ReturnOnes(double Real, double Set, double Sens){
+    if (Real > (Set+Sens)) return (1);
+    else if (Real < (Set-Sens)) return (-1);
+         else return (0);
+         }
 
