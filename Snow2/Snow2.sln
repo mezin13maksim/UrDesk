@@ -1,7 +1,13 @@
 ﻿
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow2", "Assembly-CSharp.csproj", "{2EBFD990-6F92-570C-52A7-5F0CD5D4BEA5}"
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow2", "Snow2.csproj", "{58C11147-DDD4-19FD-0771-F61BF5D694AC}"
+>>>>>>> e7f2ec1deea498583c5be58542ae6ff79858c598
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
