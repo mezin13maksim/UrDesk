@@ -105,6 +105,7 @@
     <None Include="Assets\Day-Night Skyboxes\readme.txt" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <None Include="Assets\read me.txt" />
 =======
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
@@ -119,6 +120,8 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
 =======
 >>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   </ItemGroup>
