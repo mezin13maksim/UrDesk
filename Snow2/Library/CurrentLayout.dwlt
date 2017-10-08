@@ -28,8 +28,16 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 300}
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+<<<<<<< HEAD
+  m_MinSize: {x: 950, y: 392}
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -52,6 +60,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1536
     height: 731
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
@@ -64,6 +73,20 @@ MonoBehaviour:
   vertical: 0
   controlID: 110
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+  m_MinSize: {x: 681, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
+  vertical: 0
+  controlID: 50
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 9
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,10 +117,15 @@ MonoBehaviour:
 =======
     x: 1531
     y: 0
+<<<<<<< HEAD
+    width: 311
+    height: 731
+=======
     width: 389
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -121,6 +149,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 355
     height: 442
   m_MinSize: {x: 202, y: 221}
@@ -131,8 +160,18 @@ MonoBehaviour:
 =======
     width: 379
     height: 573
+=======
+    width: 303
+    height: 442
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 379
+    height: 573
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -156,6 +195,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
     y: 442
+<<<<<<< HEAD
     width: 1178
     height: 289
   m_MinSize: {x: 232, y: 271}
@@ -170,6 +210,10 @@ MonoBehaviour:
     y: 573
     width: 1531
     height: 374
+=======
+    width: 1225
+    height: 289
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -178,7 +222,23 @@ MonoBehaviour:
   - {fileID: 18}
   m_Selected: 1
   m_LastSelected: 0
+<<<<<<< HEAD
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+=======
+    y: 573
+    width: 1531
+    height: 374
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,6 +337,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1178
     height: 731
   m_MinSize: {x: 406, y: 492}
@@ -287,8 +348,22 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 342}
   m_MaxSize: {x: 8004, y: 8042}
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+    width: 1225
+    height: 731
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
+  vertical: 1
+  controlID: 87
+=======
+    width: 1531
+    height: 947
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   vertical: 1
   controlID: 10
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,11 +390,20 @@ MonoBehaviour:
 =======
     width: 1531
     height: 573
+<<<<<<< HEAD
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   vertical: 0
+<<<<<<< HEAD
+  controlID: 88
+=======
   controlID: 11
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,6 +497,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 357
     y: 92
     width: 819
@@ -423,6 +508,12 @@ MonoBehaviour:
     y: 92
     width: 1148
     height: 552
+=======
+    x: 468
+    y: 181
+    width: 973
+    height: 501
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
 --- !u!114 &13
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
 MonoBehaviour:
@@ -474,7 +565,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\GitHub\UrDesk\Snow2
+  m_LastProjectPath: C:\GitHub\UrDesk\Snow2
   m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
@@ -484,10 +575,22 @@ MonoBehaviour:
     m_ExpandedIDs: 000000003a260000de260000e0260000fe2600003627000038270000442700004e2700006a27000080270000aa270000be270000ea2700000a280000d62a0000d82a0000da2a0000dc2a0000de2a000000ca9a3bffffff7f
 =======
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 9c280000
     m_LastClickedID: 10396
     m_ExpandedIDs: 000000009c2800001229000000ca9a3bffffff7f
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 20260000
+    m_LastClickedID: 9760
+    m_ExpandedIDs: 00000000202600002c27000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 28260000
+    m_LastClickedID: 9768
+    m_ExpandedIDs: 00000000282600003827000000ca9a3bffffff7f
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,10 +619,17 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003a260000de260000e0260000fe2600003627000038270000442700004e2700006a27000080270000aa270000be270000ea2700000a280000d62a0000d82a0000da2a0000dc2a0000de2a0000
 =======
     m_ExpandedIDs: 000000009c28000012290000
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+    m_ExpandedIDs: 00000000202600002c270000
+=======
+    m_ExpandedIDs: 000000002826000038270000
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -545,6 +655,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -555,6 +666,12 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -675,9 +792,13 @@ MonoBehaviour:
     height: 552
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 36290000
-    m_LastClickedID: 10550
-    m_ExpandedIDs: f6f4ffff0000000036290000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+<<<<<<< HEAD
+    m_ExpandedIDs: 1afcffff00000000
+=======
+    m_ExpandedIDs: 1abbffff16fcffff0000000096270000
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -702,8 +823,12 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+      m_ClientGUIView: {fileID: 4}
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
     m_SearchString: 
   m_ExpandedScenes:
   - Snow2
@@ -749,12 +874,17 @@ MonoBehaviour:
     width: 1148
     height: 552
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 554.8592970740125
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+  lastFramingTime: 93.59464595425258
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 520.6714, y: 426.29376, z: 219.98087}
     speed: 2
@@ -764,6 +894,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 719.35675, y: 380.6705, z: 152.58807}
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+    m_Target: {x: 720.82605, y: 386.65314, z: 166.82722}
+    speed: 2
+    m_Value: {x: 720.82605, y: 386.65314, z: 166.82722}
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -787,6 +922,7 @@ MonoBehaviour:
       m_Value: 0
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.44577345, y: -0.004025814, z: 0.0020029692, w: -0.89513457}
     speed: 2
     m_Value: {x: -0.44577345, y: -0.004025814, z: 0.0020029692, w: -0.89513457}
@@ -796,13 +932,20 @@ MonoBehaviour:
     m_Value: 3.6223187
 =======
     m_Target: {x: 0.013704592, y: -0.96652, z: 0.25071982, w: 0.05282986}
+=======
+    m_Target: {x: 0.18142286, y: 0.75812435, z: -0.23726757, w: 0.57968736}
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
     speed: 2
-    m_Value: {x: 0.0137045905, y: -0.9665199, z: 0.2507198, w: 0.052829854}
+    m_Value: {x: 0.18142286, y: 0.75812435, z: -0.23726757, w: 0.57968736}
   m_Size:
-    m_Target: 35.70277
+    m_Target: 6.79357
     speed: 2
+<<<<<<< HEAD
     m_Value: 35.70277
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+    m_Value: 6.79357
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -886,7 +1029,7 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 1
+  m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1148, y: 552}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -993,6 +1136,12 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+    x: 8
+    y: 542
+    width: 1223
+    height: 268
+=======
     x: 0
 <<<<<<< HEAD
     y: 534
@@ -1002,4 +1151,8 @@ MonoBehaviour:
     y: 665
     width: 1529
     height: 353
+<<<<<<< HEAD
 >>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
+=======
+>>>>>>> e6165fc44165dbb5c2e239f9d48765b860599602
+>>>>>>> parent of 4fdfd95... Добавлен шлем htc vive + скейт с текстурами
