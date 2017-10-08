@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow2", "Snow2.csproj", "{58C11147-DDD4-19FD-0771-F61BF5D694AC}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow2.Plugins", "Snow2.Plugins.csproj", "{2AEC43D7-3A60-91A0-893B-AE850E1F244D}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow2.Editor", "Snow2.Editor.csproj", "{867ED421-B62B-F2E2-00B4-ED7A74CB3306}"
+>>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +19,17 @@ Global
 		{58C11147-DDD4-19FD-0771-F61BF5D694AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58C11147-DDD4-19FD-0771-F61BF5D694AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58C11147-DDD4-19FD-0771-F61BF5D694AC}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{2AEC43D7-3A60-91A0-893B-AE850E1F244D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AEC43D7-3A60-91A0-893B-AE850E1F244D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AEC43D7-3A60-91A0-893B-AE850E1F244D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AEC43D7-3A60-91A0-893B-AE850E1F244D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{867ED421-B62B-F2E2-00B4-ED7A74CB3306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867ED421-B62B-F2E2-00B4-ED7A74CB3306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867ED421-B62B-F2E2-00B4-ED7A74CB3306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867ED421-B62B-F2E2-00B4-ED7A74CB3306}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 4fdfd9597f62fa1a31ae21c08cfc56fe6937abb5
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
