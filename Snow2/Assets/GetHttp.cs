@@ -100,13 +100,13 @@ public class GetHttp : MonoBehaviour {
         //Debug.Log("x"+coords[0]);
         //Debug.Log("y"+coords[1]);
         if ((coords[1] < 175) && (coords[1]!=0)) {
-            transform.Rotate(-Vector3.up * speedXRotation * Time.deltaTime);
+           transform.Rotate(-Vector3.forward * speedXRotation * Time.deltaTime);
             //to.rotation = this.transform.rotation;
             //this.transform.rotation = Quaternion.Lerp(from.rotation, to.rotation ,Time.time *speed);
         }
         else if (coords[1] > 195)
         {
-            transform.Rotate(Vector3.up * speedXRotation * Time.deltaTime);
+            transform.Rotate(Vector3.forward * speedXRotation * Time.deltaTime);
             //to.rotation = this.transform.rotation;
             //this.transform.rotation = Quaternion.Lerp(from.rotation, to.rotation, Time.time * speed);
         }
